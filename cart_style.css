@@ -1,0 +1,80 @@
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    align-items: center;
+    background: #dee2e1;
+}
+
+.navbar {
+    background: #dee2e1;
+    background: linear-gradient(180deg, #dee2e1 0%, #ffffff 100%);
+    text-align: center;
+    box-shadow: 0 0rem 1rem rgba(0, 0, 0, 0.25);
+    color: #2f2f2f;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+.navbar .topbar {
+    padding: 0.5rem 0;
+}
+
+.navbar .topbar ul {
+    display: inline;
+}
+
+.navbar .topbar li {
+    display: inline;
+    margin: 1%;
+    cursor: pointer;
+}
+
+.navbar .topbar .left {
+    margin-right: 24%;
+}
+
+.navbar .topbar .right {
+    margin-left: 24%;
+}
+
+.navbar .topbar .right img {
+    height: 3.5vh;
+    vertical-align: middle;
+    margin-right: .15%;
+}
+
+.navbar .bottombar {
+    padding: .5rem 0;
+}
+
+.navbar .bottombar ul {
+    text-align: left;
+    margin-left: 15rem;
+}
+
+.navbar .bottombar li {
+    display: inline-block;
+    padding: 0 .55rem;
+    vertical-align: middle;
+}
+
+.navbar .bottombar p {
+    font-size: 1.7rem;
+}
+
+.navbar .bottombar div {
+    width: .07rem;
+    height: 2.7rem;
+    background-color: #2f2f2f;
+    border-radius: 10rem;
+}
+
+.navbar .bottombar .logo {
+    height: 5.5rem;
+}
