@@ -1,0 +1,2149 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:wght@300;400;500;600;700&family=Oswald:wght@700&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    align-items: center;
+    background: #2f2f2f;
+    font-family: "Nunito" , sans-serif;
+}
+
+.navbar {
+    background: #dee2e1;
+    background: linear-gradient(180deg, #dee2e1 0%, #ffffff 100%);
+    text-align: center;
+    box-shadow: 0px 1px 10px;
+    color: #2f2f2f;
+}
+
+.navbar a {
+    text-decoration: none;
+    color: #2f2f2f;
+}
+
+.navbar .topbar {
+    padding: 10px 0;
+}
+
+.navbar .topbar ul {
+    display: inline;
+}
+
+.navbar .topbar li {
+    display: inline;
+    padding: 10px;
+}
+
+.navbar .topbar .left {
+    margin-right: 400px;
+}
+
+.navbar .topbar .right {
+    margin-left: 400px;
+}
+
+.navbar .topbar .right img {
+    height: 25px;
+    vertical-align: middle;
+}
+
+.navbar .bottombar {
+    padding: 5px 0;
+}
+
+.navbar .bottombar li {
+    display: inline-block;
+    padding: 0px 40px;
+    vertical-align: middle;
+}
+
+.navbar .bottombar .logo {
+    width: 100px;
+    height: 100px;
+}
+
+.navbar .bottombar .cart_icon {
+    width: 50px;
+    height: 50px;
+}
+
+.navbar .bottombar .community{
+    font-size: 20px;
+}
+
+.navbar .bottombar .search {
+    background: #dee2e1;
+    border-radius: 40px;
+    height: 35px;
+    padding: 5px;
+    overflow: hidden;
+}
+
+.navbar .bottombar .search input {
+    width: 400px;
+    height: 35px;
+    border: none;
+    background: none;
+    outline: none;
+    float: left;
+    font-size: 14px;
+    color: #4a4a4a;
+    line-height: 10px;
+    margin: 0 10px;
+}
+
+.navbar .bottombar .search button {
+    width: 35px;
+    height: 35px;
+    background: #4a4a4a;
+    border: none;
+    border-radius: 50%;
+    box-shadow: 1px 1px 0px 1px #6d6d6d;
+}
+
+.navbar .bottombar .search img {
+    height: 20px;
+}
+
+.Adsbar {
+    text-align: center;
+    align-items: center;
+    background-color: #dee2e1;
+    margin-top: 50px;
+    height: fit-content;
+    width: 100%;
+    overflow: hidden;
+}
+
+.Adsbar ul li {
+    display: inline-block;
+    height: 15rem;
+    width: 70%;
+    background-color: white;
+    margin-right: 15px;
+    transform: translateX(-250%);
+}
+
+.Adsbar ul {
+    /* overflow: hidden; */
+    width: 100%;
+}
+
+.SwiperBox {
+    display: flex;
+    margin-left: 42rem;
+}
+
+.NextAds {
+    background-color: black;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 31%;
+    left: 20%;
+    transition: 0.7s;
+    z-index: 3;
+    margin-top: 3rem;
+    left: 0;
+    margin-left: 5rem;
+}
+
+.Next2ads {
+    background-color: black;
+    height: 80px;
+    width: 80px;
+    border-radius: 50%;
+    position: absolute;
+    top: 31%;
+    right: 5%;
+    transition: 0.7s;
+    margin-top: 3rem;
+    z-index: 3;
+}
+
+.arr-left {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-top: 8px solid white;
+    border-left: 8px solid white;
+    transform: rotate(-45deg);
+    left: 30px;
+    top: 29%;
+}
+
+.arr-right {
+    position: absolute;
+    height: 20px;
+    width: 20px;
+    border-top: 8px solid white;
+    border-left: 8px solid white;
+    transform: rotate(135deg);
+    left: 22px;
+    top: 29%;
+}
+
+.NextAds:hover {
+    transform: scale(1.1,1.1);
+}
+
+.Next2ads:hover {
+    transform: scale(1.1,1.1);
+}
+
+.Category {
+    position: absolute;
+    display: flex;
+    right: 25%;
+    margin-top: 190px;
+    margin-right: 5px;
+}
+
+.Category .circle .freedel {
+    width: 6rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-top: 0.25rem;
+    margin-left: 0.1rem;
+}
+
+.Category .circle .cupon {
+    width: 4.5rem;
+    height: 3.5rem;
+    margin-left: 0.85rem;
+    margin-top: 1.25rem;
+}
+
+.Category .circle .special {
+    width: 4.5rem;
+    height: 5.5rem;
+    margin-left: 0.975rem;
+    margin-top: 0.15rem;
+    border-radius: 40px;
+}
+
+.Category .circle .cycle {
+    width: 5rem;
+    height: 5rem;
+    border-radius: 50%;
+    margin-left: 0.65rem;
+    margin-top: 0.5rem;
+}
+
+.Category .circle .gift {
+    width: 5rem;
+    height: 4rem;
+    margin-top: 1rem;
+    margin-left: 0.9rem;
+    border-radius: 40px;
+}
+
+.circle {
+    background-color: white;
+    height: 13vh;
+    width: 7vw;
+    display: flex;
+    border-radius: 50%;
+    margin-right: 30px;
+    margin-left: 15px;
+    transition: 1s;
+}
+
+.circle:hover {
+    transform: scale(1.1,1.1);
+}
+
+.NavigationBar {
+    float: left;
+    background-color: #6d6d6d;
+    margin-right: 2rem;
+    padding-right: 2rem;
+    position: sticky;
+    top: 0%;
+    height: 91vh;
+    border-bottom-right-radius: 75px;
+}
+
+.Nav {
+    background-color: white;
+    height: 11vh;
+    width: 7vw;
+    display: flex;
+    border-radius: 50%;
+    margin-top: 3rem;
+    margin-left: 2rem;
+    margin-bottom: 1rem;
+    transition: 1s;
+}
+
+.Nav .choose-shirt {
+    width: 4rem;
+    height: 4rem;
+    margin-left: 1.15rem;
+    margin-top: 0.5rem;
+    border-radius: 20px;
+}
+
+.Nav .choose-trousers {
+    width: 4rem;
+    height: 5rem;
+    border-radius: 60px;
+    margin-left: 1.15rem;
+}
+
+.Nav .choose-skirt {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 40px;
+    margin-left: 0.8rem;
+    margin-top: 0.25rem;
+}
+
+.Nav .choose-dress {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 30px;
+    margin-left: 0.9rem;
+    margin-top: 0.1rem;;
+}
+
+.Nav .choose-socks {
+    width: 4.5rem;
+    height: 4.5rem;
+    border-radius: 20px;
+    margin-left: 0.95rem;
+    margin-top: 0.25rem;
+}
+
+.pressNav {
+    width: 50px;
+    height: 120px;
+    position: absolute;
+    background-color: black;
+    top: 44%;
+    left: 84%;
+    border-top-right-radius: 50%;
+    border-bottom-right-radius: 50%;
+}
+
+.line {
+    width: 5px;
+    height: 80px;
+    background-color: white;
+    position: absolute;
+    top: 15%;
+    left: 24%;
+}
+
+.line2 {
+    width: 5px;
+    height: 60px;
+    background-color: white;
+    position: absolute;
+    top: 24%;
+    left: 46%;
+}
+
+.AllNav {
+    position: fixed;
+    float: left;
+    margin-left: -170px;
+    transition: 1s;
+    z-index: 5;
+}
+
+.Nav:hover {
+    transform: scale(1.1,1.1);
+}
+
+.AllNav:hover {
+    transform: translateX(170px);
+}
+
+.flashsales {
+    margin-top: 25%;
+    display: flex;
+    height: 35rem;
+    background: #8c908f;
+    margin-top: 30rem;
+}
+
+.headflash img {
+    width: 17rem;
+    height: 4rem;
+    position: absolute;
+    margin-top: 2rem;
+    margin-left: 12rem;
+}
+
+.flash-allbox {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    overflow: hidden;
+    margin-left: 3.5rem;
+}
+
+.flash-box {
+    width: 15rem;
+    height: 19rem;
+    display: block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+    margin-top: 4rem;
+    margin-left: 8rem;
+    border-radius: 30px;
+    flex-direction: column;
+}
+
+.img-flashbox img {
+    width: 12rem;
+    height: 14rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    transition: 1.5s;
+    width: 12rem;
+    height: 14rem;
+}
+
+.swipeflash {
+    transition: 1.5s;
+}
+
+.swipeflash h2 {
+    transition: 1.5s;
+    font-size: 24px;
+}
+
+.content-size {
+    width: 15rem;
+    height: 9.55rem;
+    margin-top: -100px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.content-size span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.content-colour {
+    margin-top: -50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.content-colour span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.content-colour span:nth-child(2) {
+    background: #006400;
+}
+
+.content-colour span:nth-child(3) {
+    background: #000;
+}
+
+.content-colour span:nth-child(4) {
+    background: #FAEBD7;
+}
+
+.content-buy a {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content {
+    transition: 2s ease-in;
+    transition: 0.7s ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.flash-box:hover .swipeflash {
+    transform: translateY(-50px);
+}
+
+.flash-box:hover .img-flashbox img {
+    width: 9rem;
+    height: 10rem;
+}
+
+.flash-box:hover .swipeflash h2 {
+    font-size: 18px;
+}
+
+.flash-box:hover .content {
+    opacity: 1;
+    visibility: visible;
+}
+
+
+.discount img {
+    position: absolute;
+    top: 68rem;
+    left: 8.5rem;
+    z-index: 3;
+    width: 6rem;
+    height: 7rem;
+}
+.flash-box2 {
+    width: 15rem;
+    height: 19rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    border-radius: 30px;
+}
+
+.img-flashbox2 img {
+    width: 12rem;
+    height: 14rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    transition: 1.5s;
+}
+
+.swipeflash2 {
+    transition: 1.5s;
+}
+
+.swipeflash2 h2 {
+    transition: 1.5s;
+}
+
+.content-size2 {
+    width: 15rem;
+    height: 9.55rem;
+    margin-top: -100px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.content-size2 span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.content-colour2 {
+    margin-top: -50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.content-colour2 span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.content-colour2 span:nth-child(2) {
+    background: #bac0c4;
+}
+
+.content-colour2 span:nth-child(3) {
+    background: #000;
+}
+
+.content-colour2 span:nth-child(4) {
+    background: #a2c3e2;
+}
+
+.content-buy2 a {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content2 {
+    transition: 2s ease-in;
+    transition: 0.7s ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.flash-box2:hover .swipeflash2 {
+    transform: translateY(-50px);
+}
+
+.flash-box2:hover .img-flashbox2 img {
+    width: 9rem;
+    height: 10rem;
+}
+
+.flash-box2:hover .swipeflash2 h2 {
+    font-size: 18px;
+}
+
+.flash-box2:hover .content2 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.discount2 img {
+    position: absolute;
+    top: 68.5rem;
+    left: 40.5rem;
+    z-index: 3;
+    width: 6.5rem;
+    height: 6.5rem;
+    transform: rotate(20deg);
+}
+
+.flash-box3 {
+    width: 15rem;
+    height: 19rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    border-radius: 30px;
+}
+
+.img-flashbox3 img {
+    width: 12rem;
+    height: 14rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    transition: 1.5s;
+}
+
+.swipeflash3 {
+    transition: 1.5s;
+}
+
+.swipeflash3 h2 {
+    transition: 1.5s;
+}
+
+.content-size3 {
+    width: 15rem;
+    height: 9.55rem;
+    margin-top: -100px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.content-size3 span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.content-colour3 {
+    margin-top: -50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.content-colour3 span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.content-colour3 span:nth-child(2) {
+    background: linear-gradient(90deg, rgba(119, 3, 3, 1) 0%, rgba(54, 57, 140, 0.91) 52%, rgba(209, 159, 51, 1) 100%);
+}
+
+.content-colour3 span:nth-child(3) {
+    background: linear-gradient(90deg, rgba(58, 4, 103, 1) 0%, rgba(179, 0, 122, 0.91) 53%, rgba(209, 159, 51, 1) 100%);
+}
+
+.content-colour3 span:nth-child(4) {
+    background: linear-gradient(90deg, rgba(0, 0, 0, 1) 0%, rgba(194, 5, 5, 0.91) 52%, rgba(143, 28, 151, 1) 100%);
+}
+
+.content-buy3 a {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content3 {
+    transition: 2s ease-in;
+    transition: 0.7s ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.flash-box3:hover .swipeflash3 {
+    transform: translateY(-50px);
+}
+
+.flash-box3:hover .img-flashbox3 img {
+    width: 9rem;
+    height: 10rem;
+}
+
+.flash-box3:hover .swipeflash3 h2 {
+    font-size: 18px;
+}
+
+.flash-box3:hover .content3 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.discount3 img {
+    position: absolute;
+    top: 68.5rem;
+    left: 57rem;
+    z-index: 3;
+    width: 6.5rem;
+    height: 6.5rem;
+    transform: rotate(20deg);
+}
+
+.flash-box4 {
+    width: 15rem;
+    height: 19rem;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background: white;
+    margin-top: 4rem;
+    margin-left: 2rem;
+    border-radius: 30px;
+}
+
+.img-flashbox4 img {
+    width: 12rem;
+    height: 14rem;
+    border-radius: 30px;
+    margin-top: 1rem;
+    transition: 1.5s;
+}
+
+.swipeflash4 {
+    transition: 1.5s;
+}
+
+.swipeflash4 h2 {
+    transition: 1.5s;
+}
+
+.content-size4 {
+    width: 15rem;
+    height: 9.55rem;
+    margin-top: -100px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.content-size4 span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+.content-colour4 {
+    margin-top: -50px;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.content-colour4 span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 5px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.content-colour4 span:nth-child(2) {
+    background: #967e65;
+}
+
+.content-colour4 span:nth-child(3) {
+    background: #d6b999;
+}
+
+.content-colour4 span:nth-child(4) {
+    background: #dbc2c2;
+}
+
+.content-buy4 a {
+    position: relative;
+    top: 10px;
+    display: inline-block;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 500;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.content4 {
+    transition: 2s ease-in;
+    transition: 0.7s ease-out;
+    opacity: 0;
+    visibility: hidden;
+}
+
+.flash-box4:hover .swipeflash4 {
+    transform: translateY(-50px);
+}
+
+.flash-box4:hover .img-flashbox4 img {
+    width: 9rem;
+    height: 10rem;
+}
+
+.flash-box4:hover .swipeflash4 h2 {
+    font-size: 18px;
+}
+
+.flash-box4:hover .content4 {
+    opacity: 1;
+    visibility: visible;
+}
+
+.discount4 img {
+    position: absolute;
+    top: 68.5rem;
+    left: 74rem;
+    z-index: 3;
+    width: 7rem;
+    height: 7rem;
+    transform: rotate(20deg);
+}
+
+.navbox {
+    text-align: center;
+    justify-content: center;
+}
+
+.box {
+    box-shadow: 0 18px 200px -60px black;
+    border-radius: 50px;
+    position: relative;
+    border: 2px solid #ffffff40;
+    padding: 3rem 5rem;
+    display: flex;
+    flex-direction: column;
+    width: 90px;
+    height: 250px;
+    background-color: #ffffff;
+    margin-right: 2rem;
+    margin-left: 2rem;
+    left: 5rem;
+    transition: 1s;
+    align-items: center;
+    text-align: center;
+    /* justify-content: center; */
+}
+
+.box:hover {
+    transform: scale(1.1,1.1);
+}
+
+.allbox {
+    display: flex;
+    margin-top: 10rem;
+}
+
+.rollbox {
+    display: flex;
+    margin-top: 3rem;
+}
+
+.T-shirt img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizeshirt  {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizeshirt span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.colourshirt {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.colourshirt span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.colourshirt span:nth-child(2) {
+    background: black;
+}
+
+.colourshirt span:nth-child(3) {
+    background: #e5e4dc;
+}
+
+.colourshirt span:nth-child(4) {
+    background: #b0afab;
+}
+
+.buyshirt a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.oversizedpants img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizepants  {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizepants span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.colourpants {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.colourpants span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.colourpants span:nth-child(2) {
+    background: black;
+}
+
+.colourpants span:nth-child(3) {
+    background: #aa9871;
+}
+
+.colourpants span:nth-child(4) {
+    background: #b0afab;
+}
+
+.buypants a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.oversizedpants2 img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizepants2  {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizepants2 span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.colourpants2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.colourpants2 span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.colourpants2 span:nth-child(2) {
+    background: black;
+}
+
+.colourpants2 span:nth-child(3) {
+    background: #cdce9c;
+}
+
+.colourpants2 span:nth-child(4) {
+    background: #b0afab;
+}
+
+.buypants2 a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.T-shirt2 img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizeshirt2  {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizeshirt2 span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.colourshirt2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.colourshirt2 span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.colourshirt2 span:nth-child(2) {
+    background: black;
+}
+
+.colourshirt2 span:nth-child(3) {
+    background: #bab8a3;
+}
+
+.colourshirt2 span:nth-child(4) {
+    background: #e3e0d3;
+}
+
+.buyshirt2 a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.T-shirt3 img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizeshirt3  {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizeshirt3 span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.colourshirt3 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.colourshirt3 span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.colourshirt3 span:nth-child(2) {
+    background: black;
+}
+
+.colourshirt3 span:nth-child(3) {
+    background: #5b8da2;
+}
+
+.colourshirt3 span:nth-child(4) {
+    background: #e3e0d3;
+}
+
+.buyshirt3 a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.socks img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizesocks {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizesocks span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.coloursocks {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.coloursocks span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.coloursocks span:nth-child(3) {
+    background: black;
+}
+
+.coloursocks span:nth-child(4) {
+    background: #e5e4dc;
+}
+
+.buysocks a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.T-shirt4 img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizeshirt4  {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizeshirt4 span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.colourshirt4 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.colourshirt4 span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.colourshirt4 span:nth-child(2) {
+    background: black;
+}
+
+.colourshirt4 span:nth-child(3) {
+    background: #907938;
+}
+
+.colourshirt4 span:nth-child(4) {
+    background: #50420b;
+}
+
+.buyshirt4 a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.oversizedpants3 img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizepants3  {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizepants3 span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.colourpants3 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.colourpants3 span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.colourpants3 span:nth-child(2) {
+    background: black;
+}
+
+.colourpants3 span:nth-child(3) {
+    background: #e0e1ae;
+}
+
+.colourpants3 span:nth-child(4) {
+    background: #b0afab;
+}
+
+.buypants3 a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.skirt img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizeskirt  {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizeskirt span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.colourskirt {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.colourskirt span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.colourskirt span:nth-child(2) {
+    background: #4b4e56;
+}
+
+.colourskirt span:nth-child(3) {
+    background: black;
+}
+
+.colourskirt span:nth-child(4) {
+    background: #d789c8;
+}
+
+.buyskirt a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.T-shirt5 img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizeshirt5  {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizeshirt5 span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.colourshirt5 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.colourshirt5 span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.colourshirt5 span:nth-child(2) {
+    background: black;
+}
+
+.colourshirt5 span:nth-child(3) {
+    background: #cc1e1e;
+}
+
+.colourshirt5 span:nth-child(4) {
+    background: #afdfef;
+}
+
+.buyshirt5 a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.skirt2 img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizeskirt2  {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizeskirt2 span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.colourskirt2 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.colourskirt2 span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.colourskirt2 span:nth-child(2) {
+    background: black;
+}
+
+.colourskirt2 span:nth-child(3) {
+    background: #b0c7d2;
+}
+
+.colourskirt2 span:nth-child(4) {
+    background: #d789c8;
+}
+
+.buyskirt2 a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.oversizedpants4 img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizepants4  {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizepants4 span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.colourpants4 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.colourpants4 span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.colourpants4 span:nth-child(2) {
+    background: black;
+}
+
+.colourpants4 span:nth-child(3) {
+    background: #3b5371;
+}
+
+.colourpants4 span:nth-child(4) {
+    background: #a23434;
+}
+
+.buypants4 a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+
+.skirt3 img {
+    width: 10rem;
+    height: 11rem;
+    border-radius: 40px;
+    top: 0;
+    margin-top: -2rem;
+}
+
+.sizeskirt3  {
+    width: 15rem;
+    height: 9.55rem;
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    letter-spacing: 1px;
+}
+
+.sizeskirt3 span {
+    width: 26px;
+    height: 26px;
+    text-align: center;
+    line-height: 24px;
+    display: inline-block;
+    color: white;
+    background: black;
+    border-radius: 4px;
+    margin: 0 5px;
+    font-size: 12px;
+    font-weight: 500;
+    cursor: pointer;
+    margin-top: 0.5rem;
+}
+
+.colourskirt3 {
+    display: flex;
+    position: relative;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    text-transform: uppercase;
+    font-weight: 300;
+    margin-top: 0.5rem;
+}
+
+.colourskirt3 span {
+    width: 20px;
+    height: 20px;
+    background: #FAEBD7;
+    border-radius: 50%;
+    margin: 0 3px;
+    border: 2px solid #fff;
+    box-sizing: border-box;
+    cursor: pointer;
+}
+
+.colourskirt3 span:nth-child(2) {
+    background: black;
+}
+
+.colourskirt3 span:nth-child(3) {
+    background: #688cd5;
+}
+
+.colourskirt3 span:nth-child(4) {
+    background: #cf83d6;
+}
+
+.buyskirt3 a {
+    top: 10px;
+    display: flex;
+    margin-top: 0.5rem;
+    padding: 12px 30px;
+    background: black;
+    border-radius: 40px;
+    font-weight: 300;
+    letter-spacing: 1px;
+    color: white;
+    text-decoration: none;
+}
+.navbox {
+    background-color: #dee2e1;
+    margin-top: 15rem;
+    padding: 80px 0;
+}
+
+.navbox h2 {
+    text-align: center;
+}
+
+.lastbar {
+    background-color: #dee2e1;
+    margin-top: 15rem;
+    padding: 40px 0;
+}
+
+.lastbar ul li img  {
+    margin-left: 3rem;
+}
+
+.lastbar {
+    font-size: 3ch;
+}
+h3 {
+    margin-left: 20rem;
+    font-size: 18px;
+}
+
+.lastbar ul {
+    list-style: none;
+    display: flex;
+    cursor: pointer;
+}
+
+.lastbar .column {
+    display: flex;
+}
+
+p {
+    margin-left: 78rem;
+    font-size: 1.5ch;
+}
+
+.navbox {
+    opacity: 0;
+    filter: blur(5px);
+    transform: translateX(-100%);
+    transition: all 1.5s;
+}
+
+@media(prefers-reduced-motion) {
+    .navbox {
+        transition: none;
+    }
+}
+
+.show {
+    opacity: 1;
+    filter: blur(0);
+    transform: translateX(0);
+}
