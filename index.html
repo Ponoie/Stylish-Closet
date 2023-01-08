@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Stylish Closet</title>
+    <link rel="shortcut icon" type="image/x-icon" href="./scr/icons/stylish_closet_icon_white.ico">
+    <link rel="stylesheet" href="./style.css">
+</head>
+<body>
+    <div class="side_navbar">
+        <div class="sidebar">
+            <ul>
+                <li>
+                    <img src="./scr/images/choose-dress.png">
+                    <p>dress</p>
+                </li>
+                <li>
+                    <img src="./scr/images/choose-shirt.png">
+                    <p>shirt</p>
+                </li>
+                <li>
+                    <img src="./scr/images/choose-skirt.png">
+                    <p>skirt</p>
+                </li>
+                <li>
+                    <img src="./scr/images/choose-socks.png">
+                    <p>socks</p>
+                </li>
+                <li>
+                    <img src="./scr/images/choose-trouserrs.png">
+                    <p>trouserrs</p>
+                </li>
+            </ul>
+        </div>
+        <div class="sidetab">
+            <div class="lines">
+                <div></div>
+                <div></div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbar">
+        <div class="topbar">
+            <ul class="left">
+                <li><a href="help.html">Help</a></li>
+            </ul>
+            <ul class="right">
+                <li><img src="./scr/images/moon_icon.png">Dark</li>
+                <li>Language</li>
+                <li>
+                    <a href="signup.html">Sign up</a> | <a href="login.html">Login</a>
+                </li>
+            </ul>
+        </div>
+
+        <div class="bottombar">
+            <ul>
+                <li>
+                    <a href="index.html">
+                        <img class="logo" src="./scr/images/stylish_closet_logo.png">
+                    </a>
+                </li>
+                <li>
+                    <a class="community" href="community.html">Community</a>
+                </li>
+                <li>
+                    <div class="searchbar">
+                        <input type="text" placeholder="Search">
+                        <button onclick="location.href = 'search.html';"><img
+                                src="./scr/images/search_icon.png"></button>
+                    </div>
+                    <div class="adv_search">
+                        <p onclick="open_adv_search(event)">Advanced Search</p>
+                    </div>
+                </li>
+                <li>
+                    <a href="cart.html">
+                        <img class="cart_icon" src="./scr/images/cart_icon.png">
+                    </a>
+                </li>
+            </ul>
+        </div>
+    </div>
+
+    <div class="adv_search_screen close_adv_search" onclick="close_adv_search(event)">
+        <div class="adv_search_popup">
+            <img class="close_icon close_adv_search" src="./scr/images/close_icon.png">
+
+            <div class="adv_search_head">
+                <img src="./scr/images/adv_search_thumbnail.png" alt="adv_search_thumbnail">
+            </div>
+
+            <div class="adv_search_main">
+                <form action="./search.html">
+                    <ul>
+                        <li class="adv_search_bar">
+                            <input type="text" placeholder="Search" required>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <p>Weight*</p>
+                            <input type="number" required>
+                            <div></div>
+                        </li>
+                        <li>
+                            <p>Height*</p>
+                            <input type="number" required>
+                            <div></div>
+                        </li>
+                        <li>
+                            <p>Arm Circum</p>
+                            <input type="number">
+                            <div></div>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <p>Shoulder Width</p>
+                            <input type="number">
+                            <div></div>
+                        </li>
+                        <li>
+                            <p>Chest</p>
+                            <input type="number">
+                            <div></div>
+                        </li>
+                        <li>
+                            <p>Waistline</p>
+                            <input type="number">
+                            <div></div>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <p>Hip</p>
+                            <input type="number">
+                            <div></div>
+                        </li>
+                        <li>
+                            <p>Sleeve Length</p>
+                            <input type="number">
+                            <div></div>
+                        </li>
+                        <li>
+                            <p>Leg Length</p>
+                            <input type="number">
+                            <div></div>
+                        </li>
+                    </ul>
+
+                    <ul>
+                        <li>
+                            <img src="./scr/images/sex_icon.png" alt="sex">
+                            <select name="sex" id="sex_select" required>
+                                <option value="" disabled selected hidden>Sex</option>
+                                <option value="female">Female</option>
+                                <option value="male">Male</option>
+                            </select>
+                            <div></div>
+                        </li>
+                        <li>
+                            <img src="./scr/images/skin_icon.png" alt="skin">
+                            <select name="skin" id="skin_select" required>
+                                <option value="" disabled selected hidden>Skin</option>
+                                <option value="">Light</option>
+                                <option value="">Pinkish White</option>
+                                <option value="">Yellowish White</option>
+                                <option value="">Olive</option>
+                                <option value="">Brown</option>
+                                <option value="">Black</option>
+                            </select>
+                            <div></div>
+                        </li>
+                    </ul>
+
+                    <!-- <input type="submit" value=""> -->
+                    <input type="image" src="./scr/images/search_icon.png" alt="Submit">
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div class="advertisement">
+        <ul class="ads_banners">
+            <li><img src="./scr/images/advertisements/ads1.jpg"></li>
+            <li><img src="./scr/images/advertisements/ads2.jpg"></li>
+            <li><img src="./scr/images/advertisements/ads3.jpg"></li>
+            <li><img src="./scr/images/advertisements/ads4.jfif"></li>
+        </ul>
+        <button class="previous_btn" onclick="previous_ads()"></button>
+        <button class="next_btn" onclick="next_ads()"></button>
+        <!-- <div class="ads_num_box">
+            <ul>
+                <li></li>
+                <li></li>
+                <li></li>
+                <li></li>
+            </ul>
+        </div> -->
+    </div>
+
+    <div class="cat">
+        <ul class="Category">
+            <a href="#">
+                <div class="circle">
+                    <img class="freedel" src="./scr/images/freedelivery.png">
+                </div>
+            </a>
+            <a href="#">
+                <div class="circle">
+                    <img src="./scr/images/cupon.png" class="cupon">
+                </div>
+            </a>
+            <a href="#">
+                <div class="circle">
+                    <img src="./scr/images/special.png" class="special">
+                </div>
+            </a>
+            <a href="#">
+                <div class="circle">
+                    <img src="./scr/images/cycle.png" class="cycle">
+                </div>
+            </a>
+            <a href="#">
+                <div class="circle">
+                    <img src="./scr/images/gift.png" class="gift">
+                </div>
+            </a>
+        </ul>
+    </div>
+
+    <div class="flashsales">
+        <div class="headflash">
+            <img src="./scr/images/flashsale.png">
+        </div>
+        <div class="flash-allbox">
+            <div class="flash-box">
+                <div class="swipeflash">
+                    <div class="img-flashbox">
+                        <img src="./scr/images/pant-img3.jpg">
+                    </div>
+                    <h2>Woolen Pants</h2>
+                </div>
+                <div class="content">
+                    <div class="content-size">
+                        <h4>Size :</h4>
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                    </div>
+                    <div class="content-colour">
+                        <h4>Colour :</h4>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="content-buy">
+                        <a href="#">
+                            <h4>Add To Cart 80฿</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="discount">
+                    <img src="./scr/images/discount1.png">
+                </div>
+            </div>
+
+            <div class="flash-box2">
+                <div class="swipeflash2">
+                    <div class="img-flashbox2">
+                        <img src="./scr/images/shirt.jpg">
+                    </div>
+                    <h2>Gray Korean Shirt</h2>
+                </div>
+                <div class="content2">
+                    <div class="content-size2">
+                        <h4>Size :</h4>
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                    </div>
+                    <div class="content-colour2">
+                        <h4>Colour :</h4>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="content-buy2">
+                        <a href="#">
+                            <h4>Add To Cart 40฿</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="discount2">
+                    <img src="./scr/images/discount2.png">
+                </div>
+            </div>
+
+            <div class="flash-box3">
+                <div class="swipeflash3">
+                    <div class="img-flashbox3">
+                        <img src="./scr/images/socks.jpg">
+                    </div>
+                    <h2>Colorful Socks</h2>
+                </div>
+                <div class="content3">
+                    <div class="content-size3">
+                        <h4>Size :</h4>
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                    </div>
+                    <div class="content-colour3">
+                        <h4>Colour :</h4>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="content-buy3">
+                        <a href="#">
+                            <h4>Add To Cart 20฿</h4>
+                        </a>
+                    </div>
+                </div>
+                <div class="discount3">
+                    <img src="./scr/images/discount3.png">
+                </div>
+            </div>
+
+            <div class="flash-box4">
+                <div class="swipeflash4">
+                    <div class="img-flashbox4">
+                        <img src="./scr/images/skirt.jpg">
+                    </div>
+                    <h2>Scott Korean Skirt</h2>
+                </div>
+                <div class="content4">
+                    <div class="content-size4">
+                        <h4>Size :</h4>
+                        <span>S</span>
+                        <span>M</span>
+                        <span>L</span>
+                        <span>XL</span>
+                    </div>
+                    <div class="content-colour4">
+                        <h4>Colour :</h4>
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </div>
+                    <div class="content-buy4">
+                        <a href="#">
+                            <h4>Add To Cart 90฿</h6>
+                        </a>
+                    </div>
+                </div>
+                <div class="discount4">
+                    <img src="./scr/images/discount4.png">
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="navbox">
+        <h1>Recommended products</h1>
+    </div>
+    <div class="boxes">
+        <div class="allbox">
+            <div class="box">
+                <div class="T-shirt">
+                    <img src="./scr/images/oversizeshirt.jpg">
+                </div>
+                <div class="sizeshirt">
+                    <h4>Size :</h4>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="colourshirt">
+                    <h4>Colour:</h4>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="buyshirt">
+                    <a href="#">
+                        <h4>Buy 120฿</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="oversizedpants">
+                    <img src="./scr/images/pants.jpeg">
+                </div>
+                <div class="sizepants">
+                    <h4>Size :</h4>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="colourpants">
+                    <h4>Colour:</h4>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="buypants">
+                    <a href="#">
+                        <h4>Buy 200฿</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="oversizedpants2">
+                    <img src="./scr/images/pantsstyle.png">
+                </div>
+                <div class="sizepants2">
+                    <h4>Size :</h4>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="colourpants2">
+                    <h4>Colour:</h4>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="buypants2">
+                    <a href="#">
+                        <h4>Buy 180฿</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="T-shirt2">
+                    <img src="./scr/images/tshirt2.jpg">
+                </div>
+                <div class="sizeshirt2">
+                    <h4>Size :</h4>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="colourshirt2">
+                    <h4>Colour:</h4>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="buyshirt2">
+                    <a href="#">
+                        <h4>Buy 150฿</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="rollbox">
+            <div class="box">
+                <div class="socks">
+                    <img src="./scr/images/socks2.png">
+                </div>
+                <div class="sizesocks">
+                    <h4>Size :</h4>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="coloursocks">
+                    <h4>Colour:</h4>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="buysocks">
+                    <a href="#">
+                        <h4>Buy 30฿</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="T-shirt4">
+                    <img src="./scr/images/coat.png">
+                </div>
+                <div class="sizeshirt4">
+                    <h4>Size :</h4>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="colourshirt4">
+                    <h4>Colour:</h4>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="buyshirt4">
+                    <a href="#">
+                        <h4>Buy 350฿</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="oversizedpants3">
+                    <img src="./scr/images/pants3.png">
+                </div>
+                <div class="sizepants3">
+                    <h4>Size :</h4>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="colourpants3">
+                    <h4>Colour:</h4>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="buypants3">
+                    <a href="#">
+                        <h4>Buy 180฿</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="skirt">
+                    <img src="./scr/images/skirt2.png">
+                </div>
+                <div class="sizeskirt">
+                    <h4>Size :</h4>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="colourskirt">
+                    <h4>Colour:</h4>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="buyskirt">
+                    <a href="#">
+                        <h4>Buy 250฿</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="rollbox">
+            <div class="box">
+                <div class="T-shirt5">
+                    <img src="./scr/images/tshirt4.png">
+                </div>
+                <div class="sizeshirt5">
+                    <h4>Size :</h4>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="colourshirt5">
+                    <h4>Colour:</h4>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="buyshirt5">
+                    <a href="#">
+                        <h4>Buy 220฿</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="skirt2">
+                    <img src="./scr/images/trousers.png">
+                </div>
+                <div class="sizeskirt2">
+                    <h4>Size :</h4>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="colourskirt2">
+                    <h4>Colour:</h4>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="buyskirt2">
+                    <a href="#">
+                        <h4>Buy 310฿</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="oversizedpants4">
+                    <img src="./scr/images/trousers2.png">
+                </div>
+                <div class="sizepants4">
+                    <h4>Size :</h4>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="colourpants4">
+                    <h4>Colour:</h4>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="buypants4">
+                    <a href="#">
+                        <h4>Buy 199฿</h4>
+                    </a>
+                </div>
+            </div>
+            <div class="box">
+                <div class="skirt3">
+                    <img src="./scr/images/dress2.png">
+                </div>
+                <div class="sizeskirt3">
+                    <h4>Size :</h4>
+                    <span>S</span>
+                    <span>M</span>
+                    <span>L</span>
+                    <span>XL</span>
+                </div>
+                <div class="colourskirt3">
+                    <h4>Colour:</h4>
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="buyskirt3">
+                    <a href="#">
+                        <h4>Buy 450฿</h4>
+                    </a>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="lastbar">
+        <div class="column">
+            <ul>
+                <li><img src="./scr/images/stylish_closet_logo.png" width="150px" height="150px"></li>
+            </ul>
+            <ul>
+                <li>
+                    <h3 class="h3">Customer Care</h3>
+                </li>
+                <li>
+                    <h3 class="h4">Stylish Closet</h3>
+                </li>
+            </ul>
+        </div>
+        <p>©2022 Stylish Closet</p>
+    </div>
+
+    <script src="./index.js"></script>
+
+</body>
+</html>
